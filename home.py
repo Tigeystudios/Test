@@ -13,7 +13,7 @@ def register_page():
 	submitted = st.form_submit_button("Register")
 
 	if submitted:
-		accounts = st.session_state.accounts
+	accounts = st.session_state.accounts
         if username in accounts:
             st.error("Username already exists. Please choose a different one.")
         if not username:
