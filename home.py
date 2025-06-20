@@ -14,7 +14,6 @@ def register_page():
 
 	if submitted:
 		accounts = st.session_state.accounts
-
         if username in accounts:
             st.error("Username already exists. Please choose a different one.")
         if not username:
