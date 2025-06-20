@@ -3,10 +3,7 @@ import re
 
 ACCOUNTS_FILE = 'accounts.json'
 
-try:
-	with open(ACCOUNTS_FILE, 'r') as a:
-		accounts = json.load(a)
-except json.JSONDecodeError:
-	st.warrning('There are no current accounts.')
+with open(ACCOUNTS_FILE, 'r') as a:
+	accounts = json.load(a)
 
 st.title('Welcome to Chat Time Fun!') 
